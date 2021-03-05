@@ -53,10 +53,28 @@
       },
       "actions": [
         {
-          "$kind": "PostDialog",
+          "$kind": "Microsoft.IfCondition",
           "$designer": {
-            "id": "KifZVB"
-          }
+            "id": "SmUwRX"
+          },
+          "condition": "=dialog.watching || dialog.connected",
+          "actions": [
+            {
+              "$kind": "PostDialog",
+              "$designer": {
+                "id": "rWerSJ"
+              }
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "IQXA10"
+              },
+              "activity": "${SendActivity_IQXA10()}"
+            }
+          ]
         }
       ]
     },
@@ -269,13 +287,41 @@
           ]
         },
         {
-          "$kind": "AcceptOrRejectDialog",
+          "$kind": "Microsoft.ConfirmInput",
           "$designer": {
-            "id": "aP1uOP"
+            "id": "RDEsp6"
           },
-          "conversationProperty": "=dialog.conversation",
-          "userIdProperty": "=dialog.userID",
-          "acceptProperty": false
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": true,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "prompt": "${ConfirmInput_Prompt_RDEsp6()}",
+          "choiceOptions": {
+            "includeNumbers": true
+          },
+          "property": "$response"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "FoFadH"
+          },
+          "condition": "=$response",
+          "actions": [
+            {
+              "$kind": "AcceptOrRejectDialog",
+              "$designer": {
+                "id": "rZR37P"
+              },
+              "conversationProperty": "=dialog.conversation",
+              "userIdProperty": "=dialog.userID",
+              "acceptProperty": false
+            }
+          ]
         }
       ]
     },
@@ -288,11 +334,43 @@
       "intent": "Disconnect",
       "actions": [
         {
-          "$kind": "DisconnectDialog",
+          "$kind": "Microsoft.ConfirmInput",
           "$designer": {
-            "id": "ZYFNSv"
+            "id": "lgg1XZ"
           },
-          "resultProperty": "$result"
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": true,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or ",
+            "inlineOr": " or ",
+            "inlineSeparator": ", "
+          },
+          "prompt": "${ConfirmInput_Prompt_lgg1XZ()}",
+          "style": "heroCard",
+          "property": "$response"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "75mCL5"
+          },
+          "condition": "=$response",
+          "actions": [
+            {
+              "$kind": "DisconnectDialog",
+              "$designer": {
+                "id": "dMpKzq"
+              },
+              "resultProperty": "$result"
+            }
+          ]
         }
       ]
     }

@@ -26,3 +26,16 @@
 [Activity
     Text = Do you really want to unwatch? You will no longer receive request.
 ]
+
+# ConfirmInput_Prompt_lgg1XZ()
+[Activity
+    Text = Are you sure you want to disconnect with user?
+]
+
+# ConfirmInput_Prompt_RDEsp6()
+[Activity
+    Text = Are you sure you want to reject connection with user ${dialog.user}?
+]
+
+# SendActivity_IQXA10()
+- ${dialog.watching} / ${dialog.connected}
