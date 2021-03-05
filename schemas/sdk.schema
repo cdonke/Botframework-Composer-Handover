@@ -385,7 +385,7 @@
     },
     "UnwatchDialog": {
       "$role": "implements(Microsoft.IDialog)",
-      "title": "Unwatch",
+      "title": "Unwatch requests",
       "description": "This will remove the user to the watch list",
       "type": "object",
       "required": [
@@ -420,8 +420,8 @@
     },
     "HumanDialog": {
       "$role": "implements(Microsoft.IDialog)",
-      "title": "Human",
-      "description": "This will connect the user with an agent.",
+      "title": "Talk to Human",
+      "description": "This will request to talk to a human",
       "type": "object",
       "required": [
         "$kind"
@@ -477,17 +477,17 @@
         "conversationProperty": {
           "$ref": "#/definitions/stringExpression",
           "title": "Conversation Id",
-          "description": ""
+          "description": "Conversation Id to accept/request"
         },
         "userIdProperty": {
           "$ref": "#/definitions/stringExpression",
           "title": "User Id",
-          "description": ""
+          "description": "User Id to accept/request"
         },
         "acceptProperty": {
           "$ref": "#/definitions/booleanExpression",
           "title": "Accept or Reject",
-          "description": ""
+          "description": "Whether to accept or request"
         },
         "$kind": {
           "title": "Kind of dialog object",
@@ -505,8 +505,8 @@
     },
     "PostDialog": {
       "$role": "implements(Microsoft.IDialog)",
-      "title": "Post",
-      "description": "This will send the messages",
+      "title": "Post Messages",
+      "description": "This will send the message between the agents",
       "type": "object",
       "required": [
         "$kind"
@@ -541,7 +541,7 @@
     "GetRequestsDialog": {
       "$role": "implements(Microsoft.IDialog)",
       "title": "Get Requests",
-      "description": "This will list the open requests",
+      "description": "This will get a list with the pending requests",
       "type": "object",
       "required": [
         "$kind"
@@ -575,8 +575,8 @@
     },
     "DisconnectDialog": {
       "$role": "implements(Microsoft.IDialog)",
-      "title": "Disconnect",
-      "description": "This will disconnect the conversation",
+      "title": "Disconnect Conversation",
+      "description": "This will end the conversation with the requestor",
       "type": "object",
       "required": [
         "$kind"

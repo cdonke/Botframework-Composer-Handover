@@ -40,39 +40,15 @@ namespace Microsoft.BotFramework.Composer.CustomAction.Action
         public const string Kind = nameof(AcceptOrRejectDialog);
 
 
-        /// <summary>
-        /// Gets or sets caller's memory path to store the result of this step in (ex: conversation.area).
-        /// </summary>
-        /// <value>
-        /// Caller's memory path to store the result of this step in (ex: conversation.area).
-        /// </value>
         [JsonProperty("conversationProperty")]
         public StringExpression ConversationProperty { get; set; }
 
-        /// <summary>
-        /// Gets or sets caller's memory path to store the result of this step in (ex: conversation.area).
-        /// </summary>
-        /// <value>
-        /// Caller's memory path to store the result of this step in (ex: conversation.area).
-        /// </value>
         [JsonProperty("userIdProperty")]
         public StringExpression UserProperty { get; set; }
 
-        /// <summary>
-        /// Gets or sets caller's memory path to store the result of this step in (ex: conversation.area).
-        /// </summary>
-        /// <value>
-        /// Caller's memory path to store the result of this step in (ex: conversation.area).
-        /// </value>
         [JsonProperty("acceptProperty")]
         public BoolExpression AcceptProperty { get; set; }
 
-        /// <summary>
-        /// Gets or sets caller's memory path to store the result of this step in (ex: conversation.area).
-        /// </summary>
-        /// <value>
-        /// Caller's memory path to store the result of this step in (ex: conversation.area).
-        /// </value>
         [JsonProperty("resultProperty")]
         public StringExpression ResultProperty { get; set; }
 

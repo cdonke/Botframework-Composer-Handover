@@ -34,15 +34,6 @@ namespace Microsoft.BotFramework.Composer.CustomAction.Action
         /// <value>
         /// Caller's memory path to store the result of this step in (ex: conversation.area).
         /// </value>
-        [JsonProperty("messageProperty")]
-        public StringExpression MessageProperty { get; set; }
-
-        /// <summary>
-        /// Gets or sets caller's memory path to store the result of this step in (ex: conversation.area).
-        /// </summary>
-        /// <value>
-        /// Caller's memory path to store the result of this step in (ex: conversation.area).
-        /// </value>
         [JsonProperty("resultProperty")]
         public StringExpression ResultProperty { get; set; }
 

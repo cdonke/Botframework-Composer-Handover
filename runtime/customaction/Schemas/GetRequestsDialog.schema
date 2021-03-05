@@ -1,8 +1,8 @@
 {
     "$schema": "https://schemas.botframework.com/schemas/component/v1.0/component.schema",
     "$role": "implements(Microsoft.IDialog)",
-    "title": "Watch Requests",
-    "description": "This will add the user to the watch list",
+    "title": "Get Requests",      
+    "description": "This will get a list with the pending requests",
     "type": "object",
     "additionalProperties": false,
     "properties": {        
@@ -10,6 +10,6 @@
             "$ref": "schema:#/definitions/stringExpression",
             "title": "Result",
             "description": ""
-        }
+        }       
     }
 }

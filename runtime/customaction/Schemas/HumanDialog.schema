@@ -1,8 +1,8 @@
 {
     "$schema": "https://schemas.botframework.com/schemas/component/v1.0/component.schema",
     "$role": "implements(Microsoft.IDialog)",
-    "title": "Human",
-    "description": "This will connect the user with an agent.",
+    "title": "Talk to Human",
+    "description": "This will request to talk to a human",
     "type": "object",
     "additionalProperties": false,
     "properties": {        
