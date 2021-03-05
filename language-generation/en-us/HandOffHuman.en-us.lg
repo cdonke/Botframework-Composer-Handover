@@ -1,0 +1,28 @@
+[import](common.lg)
+
+# SendActivity_Welcome
+- ${WelcomeUser()}
+
+# SendActivity_2oZSUW()
+- ```Accepting request:
+- **Conversation:** ${dialog.conversation}
+- **User:** ${dialog.userId}
+```
+
+
+
+# SendActivity_sunQJi()
+[Activity
+    Text = cancelled
+]
+
+# SendActivity_z151Ng()
+[Activity
+    Text = error
+]
+
+
+# ConfirmInput_Prompt_2zU039()
+[Activity
+    Text = Do you really want to unwatch? You will no longer receive request.
+]
