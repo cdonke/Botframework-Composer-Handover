@@ -14,11 +14,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BotMessageRouting", "bot-me
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{491E6159-5948-46D3-B8CB-30423B3959B9}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
 		..\settings\appsettings.json = ..\settings\appsettings.json
 		..\schemas\sdk.schema = ..\schemas\sdk.schema
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.BotFramework.Composer.Intermediator", "Microsoft.BotFramework.Composer.Intermediator\Microsoft.BotFramework.Composer.Intermediator.csproj", "{26F394C1-1240-475C-816D-5B01798C951C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.BotFramework.Composer.Intermediator", "Microsoft.BotFramework.Composer.Intermediator\Microsoft.BotFramework.Composer.Intermediator.csproj", "{26F394C1-1240-475C-816D-5B01798C951C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
