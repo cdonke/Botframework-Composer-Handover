@@ -36,6 +36,3 @@
 [Activity
     Text = Are you sure you want to reject connection with user ${dialog.user}?
 ]
-
-# SendActivity_IQXA10()
-- ${dialog.watching} / ${dialog.connected}
