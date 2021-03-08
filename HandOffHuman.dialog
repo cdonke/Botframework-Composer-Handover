@@ -7,7 +7,6 @@
       "id": "o3Mml6"
     }
   },
-  "autoEndDialog": false,
   "defaultResultProperty": "dialog.result",
   "triggers": [
     {
@@ -68,11 +67,13 @@
           ],
           "elseActions": [
             {
-              "$kind": "Microsoft.SendActivity",
+              "$kind": "Microsoft.TraceActivity",
               "$designer": {
-                "id": "IQXA10"
+                "id": "1XAV0P"
               },
-              "activity": "${SendActivity_IQXA10()}"
+              "name": "Handover",
+              "label": "Post",
+              "value": "Not watching nor connected"
             }
           ]
         }
@@ -410,5 +411,6 @@
         "pattern": "(?i)^disconnect$"
       }
     ]
-  }
+  },
+  "autoEndDialog": "=turn.activity.recipient.role=='skill'"
 }
