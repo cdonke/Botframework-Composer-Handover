@@ -10,8 +10,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.BotFramework.Comp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.BotFramework.Composer.CustomAction", "customaction\Microsoft.BotFramework.Composer.CustomAction.csproj", "{EE58DDD7-DE91-4DB0-A6C6-D8182523896B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BotMessageRouting", "bot-message-routing\BotMessageRouting\BotMessageRouting.csproj", "{5C8E87C3-7738-4917-8BA5-DB4A26420A0A}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{491E6159-5948-46D3-B8CB-30423B3959B9}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
@@ -20,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.BotFramework.Composer.Intermediator", "Microsoft.BotFramework.Composer.Intermediator\Microsoft.BotFramework.Composer.Intermediator.csproj", "{26F394C1-1240-475C-816D-5B01798C951C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BotMessageRouting", "bot-message-routing\BotMessageRouting.csproj", "{2218A7DF-5981-41F7-AD0E-2667CECBB05E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,14 +43,14 @@ Global
 		{EE58DDD7-DE91-4DB0-A6C6-D8182523896B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE58DDD7-DE91-4DB0-A6C6-D8182523896B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE58DDD7-DE91-4DB0-A6C6-D8182523896B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5C8E87C3-7738-4917-8BA5-DB4A26420A0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C8E87C3-7738-4917-8BA5-DB4A26420A0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C8E87C3-7738-4917-8BA5-DB4A26420A0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C8E87C3-7738-4917-8BA5-DB4A26420A0A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{26F394C1-1240-475C-816D-5B01798C951C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{26F394C1-1240-475C-816D-5B01798C951C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26F394C1-1240-475C-816D-5B01798C951C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26F394C1-1240-475C-816D-5B01798C951C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2218A7DF-5981-41F7-AD0E-2667CECBB05E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2218A7DF-5981-41F7-AD0E-2667CECBB05E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2218A7DF-5981-41F7-AD0E-2667CECBB05E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2218A7DF-5981-41F7-AD0E-2667CECBB05E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

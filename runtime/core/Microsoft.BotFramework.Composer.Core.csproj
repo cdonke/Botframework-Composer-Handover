@@ -29,7 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\bot-message-routing\BotMessageRouting\BotMessageRouting.csproj" />
+    <ProjectReference Include="..\bot-message-routing\BotMessageRouting.csproj" />
     <ProjectReference Include="..\Microsoft.BotFramework.Composer.Intermediator\Microsoft.BotFramework.Composer.Intermediator.csproj" />
   </ItemGroup>
 

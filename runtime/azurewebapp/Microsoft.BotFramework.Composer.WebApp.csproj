@@ -37,7 +37,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\bot-message-routing\BotMessageRouting\BotMessageRouting.csproj" />
+    <ProjectReference Include="..\bot-message-routing\BotMessageRouting.csproj" />
     <ProjectReference Include="..\core\Microsoft.BotFramework.Composer.Core.csproj" />
     <ProjectReference Include="..\customaction\Microsoft.BotFramework.Composer.CustomAction.csproj" />
   </ItemGroup>
